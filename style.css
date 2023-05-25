@@ -1,11 +1,97 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
 }
 
 .header-logo {
     width: 50px;
-    margin-right: auto;
+    margin-right: 525px;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.site-about {
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    width: 500px;
+}
+
+.marvel-logo {
+    width: 250px;
+}
+
+.site-info {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.card > img, .card > p {
+    width: 100px;
+}
+
+.card > img {
+    margin: 0 auto;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-box {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.quote-author {
+    align-self: flex-end;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.cta-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
