@@ -3,17 +3,28 @@
     margin: 0px;
 }
 
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: space-between;
     margin: 0 auto;
+}
+
+.header, .site-about, .site-info, .quote, .call-to-action, .footer {
+    flex: 1;
+}
+
+.header, .footer, .site-about {
+    background-color: #1f2937;
 }
 
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1f2937;
 }
 
 .header-logo {
@@ -29,10 +40,23 @@ body {
 .site-about {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .left {
-    width: 500px;
+    width: 400px;
+    margin-right: 90px;
+}
+
+.left > p {
+    font-size: 18px;
+    color: #f9faf8;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9faf8;
 }
 
 .marvel-logo {
@@ -41,6 +65,13 @@ body {
 
 .site-info {
     text-align: center;
+}
+
+.site-info > h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f2937;
+    margin: 10px 0;
 }
 
 .cards {
@@ -56,8 +87,10 @@ body {
 
 .card > img {
     margin: 0 auto;
+    border: 2px solid #3882f6;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
-
 
 .card {
     display: flex;
@@ -66,16 +99,25 @@ body {
 
 .quote-box {
     display: flex;
-    width: 500px;
+    /* width: 500px; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
 
+    background-color: #e5e7eb;
+}
+
+.quote {
+    width: 500px;
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    color: #1f2937;
 }
 
 .quote-author {
-    align-self: flex-end;
+    align-self: center;
+    font-size: 24px;
 }
 
 .call-to-action {
@@ -83,6 +125,17 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+
+    background-color: #3882f6;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px auto;
+}
+
+.call-to-action button {
+    border: 1px solid white;
+    margin-left: 100px;
 }
 
 .cta-left {
@@ -94,4 +147,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+button {
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #3882f6;
+    color: white;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.footer {
+    color: white;
+    padding: 5px;
 }
