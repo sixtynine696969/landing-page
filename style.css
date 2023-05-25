@@ -1,6 +1,7 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 
@@ -8,16 +9,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-content: space-between;
     margin: 0 auto;
-}
-
-.header, .site-about, .site-info, .quote, .call-to-action, .footer {
-    flex: 1;
+    height: 100vh;
 }
 
 .header, .footer, .site-about {
     background-color: #1f2937;
+}
+
+.top-container {
+    background-color: #1f2937;
+    padding-bottom: 30px;
 }
 
 .header {
@@ -25,6 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #1f2937;
+    margin-bottom: 25px;
 }
 
 .header-logo {
@@ -79,6 +82,7 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 100px;
+    margin: 50px 0;
 }
 
 .card > img, .card > p {
@@ -105,6 +109,7 @@ h1 {
     align-items: center;
 
     background-color: #e5e7eb;
+    padding: 50px 0;
 }
 
 .quote {
@@ -128,9 +133,9 @@ h1 {
 
     background-color: #3882f6;
     color: white;
-    padding: 20px;
+    padding: 16px;
     border-radius: 10px;
-    margin: 5px auto;
+    margin: 50px auto;
 }
 
 .call-to-action button {
@@ -170,5 +175,5 @@ button {
 
 .footer {
     color: white;
-    padding: 5px;
+    padding: 25px;
 }
